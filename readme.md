@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You will need to have the following installed before following along with the rest of this.
 
 * [Docker](https://docs.docker.com/get-docker/) - This package includes it's own Postgres server preconfigured and running on Docker.
 * [Yarn](https://classic.yarnpkg.com/en/docs/install) - Yarn Workspaces are used to create the monorepo - and the `package.json` scripts all use Yarn.
@@ -19,13 +19,25 @@ What things you need to install the software and how to install them
 Run the following to get the project dependencies installed, the docker container running, and the example db initialized.
 
 ```sh
+# Run the following:
+git clone https://github.com/sfsr12/zapatos-example.git &&\
+cd zapatos-example &&\
+yarn install &&\
+yarn setup &&\
+cd app &&\
+yarn build &&\
+yarn start
+
+# If you are curious - this is what we are doing
+# Run the app to verify everything is working as expected.
+
 # Clone repo
 git clone https://github.com/sfsr12/zapatos-example.git && cd zapatos-example
 
 # Install dependencies for all packages in workspace
 yarn install
 
-# Run setup script found in root package.json
+# Run setup script found in root package.json - look at that and data/package.json for more info
 yarn setup
 
 # Build ./app - this will also build ./db since it is a project reference in ./app/tsconfig.json
