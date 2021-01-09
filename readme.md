@@ -1,4 +1,4 @@
-# Zapatos Monorepo Example
+# Zapatos Minimal Monorepo Example
 
 This is an example project made to demonstrate the issues faced when trying to use [Zapatos](https://jawj.github.io/zapatos/) with a database module that is exported for use in another package. 
 
@@ -81,7 +81,7 @@ I encountered a few issues to get this working.  I will outline the issue, my so
 ```
 
 This is a bit of a point of friction for a couple of reasons.
-* My linter hates it `eslint@typescript-eslint/triple-slash-reference` - But whatever - linters hate lots of stuff - I can turn that off.
+* In my real project my linter hates it. `eslint@typescript-eslint/triple-slash-reference` - But whatever - linters hate lots of stuff - I can turn that off.
 * I have a lot of custom types in my real project - so that means I have a list of 15 triple slash references at my entry point.  Not the end of the world - but it sure is ugly:
 ```ts
 /// <reference path="./zapatos/schema.d.ts" />
@@ -100,3 +100,5 @@ This is a bit of a point of friction for a couple of reasons.
 /// <reference path="./zapatos/custom/int4range.d.ts" />
 /// <reference path="./zapatos/custom/post.d.ts" />
 ```
+
+Thanks for any feedback on ways to improve this.  Maybe this project can be helpful for other people trying to figure out issues with getting Zapatos working in an included package.
