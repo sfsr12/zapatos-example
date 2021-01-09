@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only", "-r", "tsconfig-paths/register"],
+            "args": ["src/main.ts"],
+            "cwd": "${workspaceRoot}",
+            "skipFiles": ["<node_internals>/**", "node_modules/**"],
+            "outputCapture": "std",
+            "console": "integratedTerminal"
+        },
+}

@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "setup": "cd db && yarn setup"
+  },
+  "workspaces": [
+    "app",
+    "db"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 5444,
+    "database": "example",
+    "user": "postgres",
+    "password": "mysecretpassword"
+  },
+  "outDir": "./src"
+}

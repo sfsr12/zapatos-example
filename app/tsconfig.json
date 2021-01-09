@@ -1,0 +1,21 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "ES2019",
+    "module": "CommonJS",
+    "strict": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "paths": {
+      "*": ["src/typings/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "../db"
+    }
+  ]
+}

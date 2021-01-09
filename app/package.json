@@ -1,0 +1,17 @@
+{
+  "name": "@example/app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@example/db": "1.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node ./dist/main.js"
+  }
+}
