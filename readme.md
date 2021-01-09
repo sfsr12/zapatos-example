@@ -100,5 +100,5 @@ This is a bit of a point of friction for a couple of reasons.
 /// <reference path="./zapatos/custom/int4range.d.ts" />
 /// <reference path="./zapatos/custom/post.d.ts" />
 ```
-
+### Thanks
 Thanks for any feedback on ways to improve this.  Maybe this project can be helpful for other people trying to figure out issues with getting Zapatos working in an included package.
