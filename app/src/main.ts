@@ -26,7 +26,7 @@ import { db, pool } from "@example/db";
 
   // Logging out results
   console.log(`
-  ${author.name} is still ${author.isLiving ? "alive" : "deceased"}
+  ${author.name} is ${author.isLiving ? "alive" : "deceased"}
   `);
 
   // Disconnecting
