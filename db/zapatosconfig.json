@@ -6,5 +6,5 @@
     "user": "postgres",
     "password": "mysecretpassword"
   },
-  "outDir": "./src"
+  "outDir": "../types"
 }

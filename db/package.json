@@ -10,7 +10,7 @@
     "stop-docker": "docker stop example-postgres && docker rm example-postgres",
     "setup": "yarn start-docker && echo \"waiting for postgres to start...\" && sleep 2 && yarn create-db && yarn create-schema && zapatos",
     "teardown": "yarn stop-docker",
-    "build": "tsc -b && yes | cp -r src/zapatos dist",
+    "build": "tsc -b",
     "start": "node dist/main.js"
   },
   "devDependencies": {
